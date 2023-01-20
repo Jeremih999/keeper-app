@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './component/Header';
+import Input from "./component/Input";
+import Currency from './component/Currency';
+import Group from './component/Group';
+import Rate from './component/Rate';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className='margin'>
+    {/* <img src='./img/money.png' /> */}
+    <Header />
+    <Group>
+    <Currency 
+      name = "currency-one"
+    />
+    <Input
+    name= "amount-one"
+    type ="number"
+     />
+     </Group>
+    <Rate rate= "The Rate Btw USD to EUR is $0.92" />
+     <Group>
+    <Currency 
+      name="currency-two"
+    />
+    <Input
+    name= "amount-two"
+    type ="number"
+     />
+     </Group>
     </div>
+
   );
 }
 

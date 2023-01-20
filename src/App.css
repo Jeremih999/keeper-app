@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,50 @@
   to {
     transform: rotate(360deg);
   }
+} */
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #010101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #fff;
+}
+.margin{
+  margin-top: 8rem;
+}
+
+input{
+  padding: 1rem;
+  background-color: #36454F;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+select{
+  padding: 1rem;
+}
+
+.rate{
+  color: #5fbaa7;
+  margin-top: 1rem;
+  text-align: center;
 }
