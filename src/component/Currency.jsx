@@ -2,7 +2,7 @@ import React from "react"
 
 function Currency(props) {
     return (
-        <select name={props.name}>
+        <select name={props.name} onChange={props.calc} id ={props.id}>
               <option value="AED">AED</option>
               <option value="ARS">ARS</option>
               <option value="AUD">AUD</option>
