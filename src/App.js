@@ -40,11 +40,13 @@ function App() {
           var data= res;
           var currencyTwo = currency_two.value
           var rates = data.conversion_rates[currencyTwo];
+
           var text = '1 ' + currencyOne + ' is ' + rates + ' ' + currencyTwo
           setRate(text)
-          const amount = ( amountOne.value * rates ).toFixed(2)
+          const amount = amountOne * rates 
+          console.log(amount)
+
           setAmountTwo(amount)
-          console.log(amountOne)
           
         })
       }
@@ -69,6 +71,7 @@ function App() {
     name= "amount-one"
     type ="number"
     calc ={GetValue}
+    value = {amountOne}
      />
      </Group>
     <Rate rate= {rate}/>
